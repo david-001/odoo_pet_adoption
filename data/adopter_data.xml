@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="pet_adopter1" model="pet.adoption.adopter">
+        <field name="name">John Doe</field>
+        <field name="email">johndoe@test.com</field>
+    </record>
+
+    <record id="pet_adopter2" model="pet.adoption.adopter">
+        <field name="name">Jane Doe</field>
+        <field name="email">janedoe@test.com</field>
+    </record>
+
+    <record id="pet_adopter3" model="pet.adoption.adopter">
+        <field name="name">Leo Max</field>
+        <field name="email">leomax@test.com</field>
+    </record>
+</odoo>

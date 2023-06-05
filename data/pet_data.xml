@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="pet_adoption_pet1" model="pet.adoption.pet">
+        <field name="name">Hero</field>
+        <field name="type">Alaskan Husky</field>
+         <field name="age">1 year</field>
+    </record>
+
+    <record id="pet_adoption_pet2" model="pet.adoption.pet">
+        <field name="name">Princess</field>
+        <field name="type">Persian Cat</field>
+        <field name="age">6 months</field>
+    </record>
+
+    <record id="pet_adoption_pet3" model="pet.adoption.pet">
+        <field name="name">Twizzles</field>
+        <field name="type">Parrot</field>
+        <field name="age">3 months</field>
+    </record>
+
+    <record id="pet_adoption_pet4" model="pet.adoption.pet">
+        <field name="name">Ham</field>
+        <field name="type">Hamster</field>
+        <field name="age">1 month</field>
+    </record>
+
+    <record id="pet_adoption_pet5" model="pet.adoption.pet">
+        <field name="name">Dory</field>
+        <field name="type">Blue Regal Tang</field>
+        <field name="age">1 month</field>
+    </record>
+
+</odoo>

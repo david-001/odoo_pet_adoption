@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pet_adoption.access_pet_adoption_adopter,access_pet_adoption_adopter,pet_adoption.model_pet_adoption_adopter,base.group_user,1,1,1,1
+pet_adoption.access_pet_adoption_pet,access_pet_adoption_pet,pet_adoption.model_pet_adoption_pet,base.group_user,1,1,1,1
+pet_adoption.access_pet_adoption_order,access_pet_adoption_order,pet_adoption.model_pet_adoption_order,base.group_user,1,1,1,1
+pet_adoption.access_pet_adoption_order_line,access_pet_adoption_order_line,pet_adoption.model_pet_adoption_order_line,base.group_user,1,1,1,1

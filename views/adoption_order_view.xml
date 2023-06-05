@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="pet_adoption_order_view_tree" model="ir.ui.view">
+        <field name="name">pet.adoption.order.tree</field>
+        <field name="model">pet.adoption.order</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order_date"/>
+                <field name="adopter_id"/>
+                <field name="ref"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="pet_adoption_order_view_form" model="ir.ui.view">
+        <field name="name">pet.adoption.order.form</field>
+        <field name="model">pet.adoption.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="order_date"/>
+                        <field name="adopter_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Adoption Order Lines">
+                            <field name="adoption_order_line_ids">
+                                <tree editable="bottom">
+                                    <field name="pet_id"/>
+                                    <field name="age"/>
+                                    <field name="type"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!--    Need this in order to be in the menu-->
+    <record id="pet_adoption_order_action" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pet.adoption.order</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first order!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="pet_adoption_order_menu_action"
+              name="Orders"
+              action="pet_adoption_order_action"
+              parent="menu_pet_adoption_root"
+              sequence="2"/>
+</odoo>

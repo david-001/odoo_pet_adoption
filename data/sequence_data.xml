@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="seq_adoption_order" model="ir.sequence">
+        <field name="name">Adoption Order</field>
+        <field name="code">pet.adoption.order</field>
+        <field name="prefix">Order</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False" />
+    </record>
+
+</odoo>
